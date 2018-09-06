@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CD86A5819BCB502006B23FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD86A5719BCB502006B23FE /* Foundation.framework */; };
+		4CD86A5A19BCB502006B23FE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD86A5919BCB502006B23FE /* CoreGraphics.framework */; };
+		4CD86A5C19BCB502006B23FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD86A5B19BCB502006B23FE /* UIKit.framework */; };
+		4CD86A5E19BCB502006B23FE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD86A5D19BCB502006B23FE /* CoreData.framework */; };
+		4CD86A6419BCB502006B23FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CD86A6219BCB502006B23FE /* InfoPlist.strings */; };
+		4CD86A6619BCB502006B23FE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD86A6519BCB502006B23FE /* main.m */; };
+		4CD86A6A19BCB502006B23FE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD86A6919BCB502006B23FE /* AppDelegate.m */; };
+		4CD86A6D19BCB502006B23FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CD86A6B19BCB502006B23FE /* Main.storyboard */; };
+		4CD86A7019BCB502006B23FE /* FindHorizon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CD86A6E19BCB502006B23FE /* FindHorizon.xcdatamodeld */; };
+		4CD86A7319BCB502006B23FE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD86A7219BCB502006B23FE /* MainViewController.m */; };
+		4CD86A7619BCB502006B23FE /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD86A7519BCB502006B23FE /* FlipsideViewController.m */; };
+		4CD86A7819BCB502006B23FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CD86A7719BCB502006B23FE /* Images.xcassets */; };
+		4CD86A7F19BCB503006B23FE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD86A7E19BCB503006B23FE /* XCTest.framework */; };
+		4CD86A8019BCB503006B23FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD86A5719BCB502006B23FE /* Foundation.framework */; };
+		4CD86A8119BCB503006B23FE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD86A5B19BCB502006B23FE /* UIKit.framework */; };
+		4CD86A8219BCB503006B23FE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CD86A5D19BCB502006B23FE /* CoreData.framework */; };
+		4CD86A8A19BCB503006B23FE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CD86A8819BCB503006B23FE /* InfoPlist.strings */; };
+		4CD86A8C19BCB503006B23FE /* FindHorizonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD86A8B19BCB503006B23FE /* FindHorizonTests.m */; };
+		4CD86AA619BCB566006B23FE /* GeoCalculation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD86A9A19BCB566006B23FE /* GeoCalculation.m */; };
+		4CD86AA719BCB566006B23FE /* horizon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CD86A9B19BCB566006B23FE /* horizon_57.png */; };
+		4CD86AA819BCB566006B23FE /* horizon_72.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CD86A9C19BCB566006B23FE /* horizon_72.png */; };
+		4CD86AA919BCB566006B23FE /* horizon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CD86A9D19BCB566006B23FE /* horizon_114.png */; };
+		4CD86AAA19BCB566006B23FE /* horizon_512.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CD86A9E19BCB566006B23FE /* horizon_512.png */; };
+		4CD86AAB19BCB566006B23FE /* ImprovedMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD86AA019BCB566006B23FE /* ImprovedMapView.m */; };
+		4CD86AAC19BCB566006B23FE /* MapLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CD86AA219BCB566006B23FE /* MapLocation.m */; };
+		4CD86AAD19BCB566006B23FE /* navbarbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CD86AA319BCB566006B23FE /* navbarbackground.png */; };
+		4CD86AAE19BCB566006B23FE /* userlocation.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CD86AA419BCB566006B23FE /* userlocation.png */; };
+		4CD86AAF19BCB566006B23FE /* windrose2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CD86AA519BCB566006B23FE /* windrose2.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CD86A8319BCB503006B23FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CD86A4C19BCB502006B23FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CD86A5319BCB502006B23FE;
+			remoteInfo = FindHorizon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4CD86A5419BCB502006B23FE /* FindHorizon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindHorizon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CD86A5719BCB502006B23FE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4CD86A5919BCB502006B23FE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4CD86A5B19BCB502006B23FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4CD86A5D19BCB502006B23FE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4CD86A6119BCB502006B23FE /* FindHorizon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FindHorizon-Info.plist"; sourceTree = "<group>"; };
+		4CD86A6319BCB502006B23FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4CD86A6519BCB502006B23FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4CD86A6719BCB502006B23FE /* FindHorizon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FindHorizon-Prefix.pch"; sourceTree = "<group>"; };
+		4CD86A6819BCB502006B23FE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4CD86A6919BCB502006B23FE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4CD86A6C19BCB502006B23FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4CD86A6F19BCB502006B23FE /* FindHorizon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FindHorizon.xcdatamodel; sourceTree = "<group>"; };
+		4CD86A7119BCB502006B23FE /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		4CD86A7219BCB502006B23FE /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		4CD86A7419BCB502006B23FE /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
+		4CD86A7519BCB502006B23FE /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
+		4CD86A7719BCB502006B23FE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4CD86A7D19BCB503006B23FE /* FindHorizonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindHorizonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CD86A7E19BCB503006B23FE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4CD86A8719BCB503006B23FE /* FindHorizonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FindHorizonTests-Info.plist"; sourceTree = "<group>"; };
+		4CD86A8919BCB503006B23FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4CD86A8B19BCB503006B23FE /* FindHorizonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FindHorizonTests.m; sourceTree = "<group>"; };
+		4CD86A9919BCB566006B23FE /* GeoCalculation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoCalculation.h; sourceTree = "<group>"; };
+		4CD86A9A19BCB566006B23FE /* GeoCalculation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoCalculation.m; sourceTree = "<group>"; };
+		4CD86A9B19BCB566006B23FE /* horizon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horizon_57.png; sourceTree = "<group>"; };
+		4CD86A9C19BCB566006B23FE /* horizon_72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horizon_72.png; sourceTree = "<group>"; };
+		4CD86A9D19BCB566006B23FE /* horizon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horizon_114.png; sourceTree = "<group>"; };
+		4CD86A9E19BCB566006B23FE /* horizon_512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horizon_512.png; sourceTree = "<group>"; };
+		4CD86A9F19BCB566006B23FE /* ImprovedMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImprovedMapView.h; sourceTree = "<group>"; };
+		4CD86AA019BCB566006B23FE /* ImprovedMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImprovedMapView.m; sourceTree = "<group>"; };
+		4CD86AA119BCB566006B23FE /* MapLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapLocation.h; sourceTree = "<group>"; };
+		4CD86AA219BCB566006B23FE /* MapLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapLocation.m; sourceTree = "<group>"; };
+		4CD86AA319BCB566006B23FE /* navbarbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navbarbackground.png; sourceTree = "<group>"; };
+		4CD86AA419BCB566006B23FE /* userlocation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userlocation.png; sourceTree = "<group>"; };
+		4CD86AA519BCB566006B23FE /* windrose2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = windrose2.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CD86A5119BCB502006B23FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CD86A5A19BCB502006B23FE /* CoreGraphics.framework in Frameworks */,
+				4CD86A5E19BCB502006B23FE /* CoreData.framework in Frameworks */,
+				4CD86A5C19BCB502006B23FE /* UIKit.framework in Frameworks */,
+				4CD86A5819BCB502006B23FE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CD86A7A19BCB503006B23FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CD86A7F19BCB503006B23FE /* XCTest.framework in Frameworks */,
+				4CD86A8219BCB503006B23FE /* CoreData.framework in Frameworks */,
+				4CD86A8119BCB503006B23FE /* UIKit.framework in Frameworks */,
+				4CD86A8019BCB503006B23FE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CD86A4B19BCB502006B23FE = {
+			isa = PBXGroup;
+			children = (
+				4CD86A5F19BCB502006B23FE /* FindHorizon */,
+				4CD86A8519BCB503006B23FE /* FindHorizonTests */,
+				4CD86A5619BCB502006B23FE /* Frameworks */,
+				4CD86A5519BCB502006B23FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4CD86A5519BCB502006B23FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CD86A5419BCB502006B23FE /* FindHorizon.app */,
+				4CD86A7D19BCB503006B23FE /* FindHorizonTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CD86A5619BCB502006B23FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4CD86A5719BCB502006B23FE /* Foundation.framework */,
+				4CD86A5919BCB502006B23FE /* CoreGraphics.framework */,
+				4CD86A5B19BCB502006B23FE /* UIKit.framework */,
+				4CD86A5D19BCB502006B23FE /* CoreData.framework */,
+				4CD86A7E19BCB503006B23FE /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4CD86A5F19BCB502006B23FE /* FindHorizon */ = {
+			isa = PBXGroup;
+			children = (
+				4CD86A9819BCB52A006B23FE /* Utils */,
+				4CD86A9719BCB525006B23FE /* Connection */,
+				4CD86A9619BCB520006B23FE /* Model */,
+				4CD86A9519BCB51B006B23FE /* UI */,
+				4CD86A6819BCB502006B23FE /* AppDelegate.h */,
+				4CD86A6919BCB502006B23FE /* AppDelegate.m */,
+				4CD86A7719BCB502006B23FE /* Images.xcassets */,
+				4CD86A6019BCB502006B23FE /* Supporting Files */,
+			);
+			path = FindHorizon;
+			sourceTree = "<group>";
+		};
+		4CD86A6019BCB502006B23FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CD86AB019BCB56F006B23FE /* Images */,
+				4CD86A6119BCB502006B23FE /* FindHorizon-Info.plist */,
+				4CD86A6219BCB502006B23FE /* InfoPlist.strings */,
+				4CD86A6519BCB502006B23FE /* main.m */,
+				4CD86A6719BCB502006B23FE /* FindHorizon-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CD86A8519BCB503006B23FE /* FindHorizonTests */ = {
+			isa = PBXGroup;
+			children = (
+				4CD86A8B19BCB503006B23FE /* FindHorizonTests.m */,
+				4CD86A8619BCB503006B23FE /* Supporting Files */,
+			);
+			path = FindHorizonTests;
+			sourceTree = "<group>";
+		};
+		4CD86A8619BCB503006B23FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4CD86A8719BCB503006B23FE /* FindHorizonTests-Info.plist */,
+				4CD86A8819BCB503006B23FE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CD86A9519BCB51B006B23FE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4CD86A6B19BCB502006B23FE /* Main.storyboard */,
+				4CD86AB119BCB58E006B23FE /* Map */,
+				4CD86A7119BCB502006B23FE /* MainViewController.h */,
+				4CD86A7219BCB502006B23FE /* MainViewController.m */,
+				4CD86A7419BCB502006B23FE /* FlipsideViewController.h */,
+				4CD86A7519BCB502006B23FE /* FlipsideViewController.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		4CD86A9619BCB520006B23FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4CD86A6E19BCB502006B23FE /* FindHorizon.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4CD86A9719BCB525006B23FE /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Connection;
+			sourceTree = "<group>";
+		};
+		4CD86A9819BCB52A006B23FE /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4CD86A9919BCB566006B23FE /* GeoCalculation.h */,
+				4CD86A9A19BCB566006B23FE /* GeoCalculation.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		4CD86AB019BCB56F006B23FE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4CD86AA319BCB566006B23FE /* navbarbackground.png */,
+				4CD86AA419BCB566006B23FE /* userlocation.png */,
+				4CD86AA519BCB566006B23FE /* windrose2.png */,
+				4CD86A9B19BCB566006B23FE /* horizon_57.png */,
+				4CD86A9C19BCB566006B23FE /* horizon_72.png */,
+				4CD86A9D19BCB566006B23FE /* horizon_114.png */,
+				4CD86A9E19BCB566006B23FE /* horizon_512.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		4CD86AB119BCB58E006B23FE /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				4CD86A9F19BCB566006B23FE /* ImprovedMapView.h */,
+				4CD86AA019BCB566006B23FE /* ImprovedMapView.m */,
+				4CD86AA119BCB566006B23FE /* MapLocation.h */,
+				4CD86AA219BCB566006B23FE /* MapLocation.m */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CD86A5319BCB502006B23FE /* FindHorizon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CD86A8F19BCB503006B23FE /* Build configuration list for PBXNativeTarget "FindHorizon" */;
+			buildPhases = (
+				4CD86A5019BCB502006B23FE /* Sources */,
+				4CD86A5119BCB502006B23FE /* Frameworks */,
+				4CD86A5219BCB502006B23FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindHorizon;
+			productName = FindHorizon;
+			productReference = 4CD86A5419BCB502006B23FE /* FindHorizon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4CD86A7C19BCB503006B23FE /* FindHorizonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CD86A9219BCB503006B23FE /* Build configuration list for PBXNativeTarget "FindHorizonTests" */;
+			buildPhases = (
+				4CD86A7919BCB503006B23FE /* Sources */,
+				4CD86A7A19BCB503006B23FE /* Frameworks */,
+				4CD86A7B19BCB503006B23FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CD86A8419BCB503006B23FE /* PBXTargetDependency */,
+			);
+			name = FindHorizonTests;
+			productName = FindHorizonTests;
+			productReference = 4CD86A7D19BCB503006B23FE /* FindHorizonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CD86A4C19BCB502006B23FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Michael Dietz";
+				TargetAttributes = {
+					4CD86A7C19BCB503006B23FE = {
+						TestTargetID = 4CD86A5319BCB502006B23FE;
+					};
+				};
+			};
+			buildConfigurationList = 4CD86A4F19BCB502006B23FE /* Build configuration list for PBXProject "FindHorizon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4CD86A4B19BCB502006B23FE;
+			productRefGroup = 4CD86A5519BCB502006B23FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CD86A5319BCB502006B23FE /* FindHorizon */,
+				4CD86A7C19BCB503006B23FE /* FindHorizonTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CD86A5219BCB502006B23FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CD86AA919BCB566006B23FE /* horizon_114.png in Resources */,
+				4CD86AAD19BCB566006B23FE /* navbarbackground.png in Resources */,
+				4CD86A7819BCB502006B23FE /* Images.xcassets in Resources */,
+				4CD86AA719BCB566006B23FE /* horizon_57.png in Resources */,
+				4CD86AAA19BCB566006B23FE /* horizon_512.png in Resources */,
+				4CD86AAE19BCB566006B23FE /* userlocation.png in Resources */,
+				4CD86AA819BCB566006B23FE /* horizon_72.png in Resources */,
+				4CD86A6419BCB502006B23FE /* InfoPlist.strings in Resources */,
+				4CD86A6D19BCB502006B23FE /* Main.storyboard in Resources */,
+				4CD86AAF19BCB566006B23FE /* windrose2.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CD86A7B19BCB503006B23FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CD86A8A19BCB503006B23FE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CD86A5019BCB502006B23FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CD86A6A19BCB502006B23FE /* AppDelegate.m in Sources */,
+				4CD86AAB19BCB566006B23FE /* ImprovedMapView.m in Sources */,
+				4CD86A6619BCB502006B23FE /* main.m in Sources */,
+				4CD86A7019BCB502006B23FE /* FindHorizon.xcdatamodeld in Sources */,
+				4CD86AA619BCB566006B23FE /* GeoCalculation.m in Sources */,
+				4CD86A7619BCB502006B23FE /* FlipsideViewController.m in Sources */,
+				4CD86A7319BCB502006B23FE /* MainViewController.m in Sources */,
+				4CD86AAC19BCB566006B23FE /* MapLocation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CD86A7919BCB503006B23FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CD86A8C19BCB503006B23FE /* FindHorizonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4CD86A8419BCB503006B23FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CD86A5319BCB502006B23FE /* FindHorizon */;
+			targetProxy = 4CD86A8319BCB503006B23FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4CD86A6219BCB502006B23FE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CD86A6319BCB502006B23FE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4CD86A6B19BCB502006B23FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CD86A6C19BCB502006B23FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4CD86A8819BCB503006B23FE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CD86A8919BCB503006B23FE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4CD86A8D19BCB503006B23FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4CD86A8E19BCB503006B23FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CD86A9019BCB503006B23FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FindHorizon/FindHorizon-Prefix.pch";
+				INFOPLIST_FILE = "FindHorizon/FindHorizon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4CD86A9119BCB503006B23FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FindHorizon/FindHorizon-Prefix.pch";
+				INFOPLIST_FILE = "FindHorizon/FindHorizon-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4CD86A9319BCB503006B23FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FindHorizon.app/FindHorizon";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FindHorizon/FindHorizon-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FindHorizonTests/FindHorizonTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4CD86A9419BCB503006B23FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FindHorizon.app/FindHorizon";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FindHorizon/FindHorizon-Prefix.pch";
+				INFOPLIST_FILE = "FindHorizonTests/FindHorizonTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CD86A4F19BCB502006B23FE /* Build configuration list for PBXProject "FindHorizon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CD86A8D19BCB503006B23FE /* Debug */,
+				4CD86A8E19BCB503006B23FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CD86A8F19BCB503006B23FE /* Build configuration list for PBXNativeTarget "FindHorizon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CD86A9019BCB503006B23FE /* Debug */,
+				4CD86A9119BCB503006B23FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4CD86A9219BCB503006B23FE /* Build configuration list for PBXNativeTarget "FindHorizonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CD86A9319BCB503006B23FE /* Debug */,
+				4CD86A9419BCB503006B23FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4CD86A6E19BCB502006B23FE /* FindHorizon.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4CD86A6F19BCB502006B23FE /* FindHorizon.xcdatamodel */,
+			);
+			currentVersion = 4CD86A6F19BCB502006B23FE /* FindHorizon.xcdatamodel */;
+			path = FindHorizon.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4CD86A4C19BCB502006B23FE /* Project object */;
+}
